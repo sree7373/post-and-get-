@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTtp get method</title>
+</head>
+<body>
+    <form method="GET">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <input type="submit" value="Submit">
+      </form>
+      <h1>http get method</h1>
+      <p>{{fullname}}</p>
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>http methods demo</title>
+</head>
+<body>
+    <form  method="POST">
+        {% csrf_token %}
+        <label for="number1">num1:</label><br>
+        <input type="number" id="number1" name="number1" placeholder="for e.g,1"><br>
+        <label for="number2">num2:</label><br>
+        <input type="number" id="number2" name="number2" placeholder="for e,g,2"><br><br>
+        <input type="submit" value="Submit">
+      </form> 
+      <h1>demo of http POST request</h1>
+      <p>{{sum}}</p>
+</body>
+</html>
